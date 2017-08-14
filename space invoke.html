@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=no" />
+  <script type="text/javascript" src="j2ds/j2ds.js"></script>
+  <title>Space Game of Death</title>
+ </head>
+ <body>
+
+<script type="text/javascript">
+
+// Объектu сцены для быстрого доступа
+var scene = j2ds.scene;
+var v2f = j2ds.vector.vec2df;
+var io= j2ds.input;
+var layers=scene.layers;
+
+scene.init(500, 300);
+layers.add('back',-1);
+layers.layer('back').fill('black');
+var Game = function () { 
+ scene.clear();
+ 
+
+};
+scene.start(Game); // Второй параметр - FPS
+</script>
+
+ </body>
+</html>
