@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript leson7</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+        var user,user2,user3;
+            user={
+                firstName:"Vlad",
+                lastName:"Petechuk",
+                age:19,
+                sex:"male",
+                fullName: function(){
+                return this.firstName + ' ' + this.lastName;
+                }
+            };
+                            
+            user2=new Object({
+                  firstName:"Vlad",
+                lastName:"Petechuk",
+                age:19,
+                sex:"male",
+                fullName: function(){
+                return this.firstName + ' ' + this.lastName;
+                }
+            });
+            user3 = new String("Vlad2");
+            
+            console.log(user2.fullName());
+            console.log(user3.length);
+        </script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

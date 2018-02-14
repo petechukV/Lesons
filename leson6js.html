@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript leson6</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="text" name="length" id="length" placeholder="Длина">
+        <input type="text" name="width" id="width" placeholder="Ширина">
+        <input type="text" name="height" id="height" placeholder="Высота">
+        <input type="button" id="calculate" onclick="displayRes()" value="Разчитать объм">
+        <br>
+        <p id="result"></p>
+        <script>
+        function displayRes()
+            {
+                var length=document.getElementById('length').value;
+                var width=document.getElementById('width').value;
+                var height=document.getElementById('height').value;  
+                document.getElementById('result').innerHTML='Объм равен: '+ calcSize(length, width, height)+'.m<sup>3</sup>';
+            }
+            function calcSize(length,width,height)
+            {
+                return length*width*height;
+            }
+        </script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
