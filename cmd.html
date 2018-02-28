@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Test Cmd</title>
+</head>
+    <body>
+    <script>
+const si = require('systeminformation'); 
+// callback style
+si.cpu(function(data) {
+    console.log('CPU-Information:');
+    console.log(data);
+});</script>    
+    </body>
+</html>
