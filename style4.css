@@ -5,7 +5,7 @@
     cursor: pointer;
 }
 
-.menu-item .submenu{
+.submenu{
     height: 40px;
     width: 120px;
     background: red;
